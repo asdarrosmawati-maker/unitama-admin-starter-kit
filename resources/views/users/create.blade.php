@@ -53,9 +53,8 @@
 
                 <div class="col-md-6">
                     <label for="role" class="form-label required">Role</label>
-                    <select class="form-select" aria-label="Default select example" id="role" name="role"
-                        required>
-                        <option selected>Pilih Role</option>
+                    <select class="form-select select2-default" id="role" name="role" required>
+                        <option value="" disabled selected>Pilih Role</option>
                         <option value="Superadmin" @selected(old('role') == 'Superadmin')>Superadmin</option>
                         <option value="Admin" @selected(old('role') == 'Admin')>Admin</option>
                     </select>
